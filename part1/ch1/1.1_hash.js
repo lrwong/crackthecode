@@ -8,6 +8,8 @@ let argv = require('yargs')
 
 function unique(str){
 let hash = [];
+str = str.toLowerCase(0);	//turn everything to lower case to make the hash table work
+
 
 //js is dumb and needs to dynamically allocate the array
 for(let y = 0; y < 26; y++){
