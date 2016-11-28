@@ -7,9 +7,9 @@ typedef struct QUEUE{
 } QUEUE;
 
 void enqueue(QUEUE *q, NODE *n){
-	if(tail != NULL){
+	if(q->tail != NULL){
 		q->tail->next = n;
-		n->next = null;
+		n->next = NULL;
 		q->tail = n;
 	} else {
 		return;

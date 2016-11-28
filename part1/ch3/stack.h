@@ -4,9 +4,10 @@
 
 typedef struct STACK{
 	NODE *top;
+	NODE *min;
 } STACK;
 
-NODE* pop(STACK s){
+NODE* pop(STACK *s){
 	if(s->top != NULL){
 		NODE *ptr = s->top;
 		return ptr;
@@ -15,7 +16,7 @@ NODE* pop(STACK s){
 	}
 }
 
-void push(STACK s, NODE *n){
+void push(STACK *s, NODE *n){
 	//make sure the stack is valid
 	if(s != NULL){
 		//new stack, add the new node as the first element

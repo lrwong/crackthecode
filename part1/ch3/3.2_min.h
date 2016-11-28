@@ -1,11 +1,10 @@
 /*include a pointer to the minimum and reset the pointer 
 whenever a lower element is pushed to the stack*/
 
-#include "node.h"
 #include "stack.h"
 #include <stdio.h>
 
-void push(STACK *s, NODE *n){
+void minPush(STACK *s, NODE *n){
 	if(s != NULL){
 		//new stack, add the new node as the first element
 		if(s->top == NULL){
